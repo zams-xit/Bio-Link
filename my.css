@@ -1,0 +1,38 @@
+.text-white {
+	color: white;
+}
+
+.mt-sm {
+	margin-top: 1rem;
+}
+
+.mt-xl {
+	margin-top: 2rem;
+}
+
+.text-center {
+	text-align: center;
+	justify-content: center;
+}
+
+.btn-x {
+    font-weight: 500;
+    padding: 10px 20px; /* Menambahkan padding horizontal */
+    background: linear-gradient(45deg, #6a11cb, #2575fc); /* Gradien latar belakang */
+    color: white; /* Mengubah warna teks menjadi putih */
+    border-radius: 30px;
+    min-width: 350px;
+    text-decoration: none;
+    display: inline-block; /* Agar padding dan ukuran berfungsi dengan baik */
+    text-align: center; /* Memusatkan teks */
+    transition: all 0.3s ease; /* Transisi untuk semua efek */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Bayangan default */
+    border: 2px solid transparent; /* Border default */
+}
+
+.btn-x:hover {
+    background: linear-gradient(45deg, #2575fc, #6a11cb); /* Mengubah gradien saat hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); /* Bayangan tebal saat hover */
+    border: 2px solid white; /* Menambahkan border putih saat hover */
+    transform: translateY(-2px); /* Mengangkat tombol sedikit saat hover */
+}

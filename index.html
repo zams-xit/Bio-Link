@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ZamsX | BioLink</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        html, body {
+            background: #2C3E50;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .gif {
+            margin-top: 1.5rem;
+            border-radius: 50%;
+            width: 130px;
+            height: 130px;
+            border: 2px solid #ECF0F1;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s;
+        }
+
+        .gif:hover {
+            transform: scale(1.2);
+        }
+
+        .btn-x {
+            font-weight: 500;
+            padding: 10px 20px;
+            background: #3498DB;
+            color: #ECF0F1;
+            border-radius: 30px;
+            min-width: 320px;
+            text-decoration: none;
+            display: inline-block;
+            text-align: center;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            margin: 9px;
+        }
+
+        .btn-x:hover {
+            background: #2980B9;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+            transform: translateY(-2px);
+        }
+
+        .icons {
+            margin-right: 0.5rem;
+            font-size: 1.2rem;
+            transition: transform 0.3s;
+            display: inline-block; 
+        }
+
+        .btn-x:hover .icons {
+            animation: spin 0.6s forwards; 
+            transform: scale(1.2); 
+        }
+
+        @keyframes spin {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .title {
+        	margin-top: 2rem;
+            font-size: 2.5rem;
+            color: #ECF0F1;
+            transition: transform 0.8s;
+        }
+
+        .title:hover {
+            transform: scale(1.2);
+        }
+
+        footer {
+            color: #ECF0F1;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: auto;
+            width: 100%;
+        }
+
+        .mt {
+        	margin-top: 1.5rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER START-->
+    <div class="container">
+        <img class="gif" src="img/profile.gif" alt="GIF">
+    </div>
+    <!-- HEADER END-->
+
+    <!-- BUTTON START -->
+    <div class="container">
+        <h1 style="font-size: 2.5rem;" class="title">ZAMSX</h1>
+        <a class="btn-x mt" href="https://tiktok.com/"><i class="fa-brands fa-tiktok icons"></i>TIKTOK</a>
+        <a class="btn-x" href="#" onclick="showToast('Kepo')"><i class="fa-brands fa-youtube icons"></i>YOUTUBE</a>
+        <a class="btn-x" href="#" onclick="showToast('Kepo')"><i class="fa-brands fa-instagram icons"></i>INSTAGRAM</a>
+        <a class="btn-x" href="https://github.com/zams-xit"><i class="fa-brands fa-github icons"></i>GITHUB</a>
+    </div>
+    <!-- BUTTON END -->
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        function showToast(message) {
+            Swal.fire({
+                position: 'top-end',
+                icon: 'info',
+                title: message,
+                showConfirmButton: false,
+                timer: 2000,
+                background: '#eaeaeae', // Latar belakang merah
+                color: '#00000',
+                toast: true,
+                customClass: {
+                    popup: 'swal2-toast'
+                }
+            });
+        }
+    </script>
+</body>
+</html>
